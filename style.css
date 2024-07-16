@@ -1,0 +1,105 @@
+* {
+  margin: 0; /*espacamento externo*/
+  padding: 0; /*espacamento interno*/
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* * asterisco significa TUDO, ele vai aplicar esse estilo para tudo */
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+video,
+.img-tesla {
+  width: 100%; /* largura*/
+  height: 100%; /*altura */
+  position: absolute; /* posiciona o item numa posicao exata que eu desejar */
+  top: 0;
+  left: 0;
+  z-index: -1; /* define quem fica na frente de quem */
+  object-fit: cover; /* faz com que o video cubra toda a tela */
+  filter: brightness(60%);
+}
+
+.logo {
+  filter: brightness(100);
+  position: fixed;
+  width: 120px;
+}
+
+.item {
+  display: flex; /* habilita algumas propiedades css */
+  position: relative;
+  height: 100vh; /* tela toda - altura */
+  width: 100vw; /* tela toda - largura */
+  justify-content: space-between; /* cria um espaçamento entre os itens */
+  flex-direction: column; /* deixar um item debaixo do outro */
+  scroll-snap-align: start;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.sub-titulo {
+  color: white;
+}
+
+.info-carro {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.rodape {
+  text-align: center; /* alinha meu item ao centro */
+}
+
+button {
+  background-color: rgba(34, 34, 34, 0.8);
+  color: white;
+  padding: 7px 80px;
+  border-radius: 5px; /* arrendonda a borda do botão */
+  border: none; /* tira a borda do botão */
+  cursor: pointer;
+}
+
+.test-drive {
+  color: black;
+  background-color: white;
+}
+
+.texto-rodape {
+  color: white;
+  font-size: 12px; /* tamanho do texto*/
+  margin-top: 10px;
+}
+
+.titulo-modelo-x {
+  color: black;
+}
+
+.sub-titulo.especial {
+  color: black; /* Altere "red" para a cor desejada */
+}
+
+.formulario {
+  position: fixed;
+  top: 40px;
+  width: 500px;
+  height: 100%;
+  z-index: 3;
+  left: -70%;
+  transition: 1.5s;
+}
+.formularioTestDrive {
+  position: fixed;
+  top: 40px;
+  width: 500px;
+  height: 100%;
+  z-index: 3;
+  left: -70%;
+  transition: 1.5s;
+}
